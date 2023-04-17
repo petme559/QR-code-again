@@ -1,6 +1,5 @@
-<!DOCTYPE html>
 <html>
-  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
@@ -9,16 +8,14 @@
               vr-mode-ui="enabled: false"
               gesture-detector
              >
-  <a-assets>
-      <a-asset-item id="tree" src="https://mokosdaniel.github.io/ARPymol/transparentcavity.dae"></a-asset-item>
-    </a-assets>
+Properties>
       <a-marker type="pattern" preset="custom" url="https://mokosdaniel.github.io/ARPymol/pattern-3Dmarkerqrasimmetric.patt">        
 
    
         <a-entity
           position="0 0 0"
           scale="0.1 0.1 0.1"
-          collada-model="#tree"
+          gltf-model="https://mokosdaniel.github.io/ARPymol/A622activesite.gltf"
           class="clickable"
           gesture-handler="minScale: 0.025; maxScale: 10"
         ></a-entity>
