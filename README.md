@@ -25,7 +25,7 @@ In case you want to use a personalized Marker:
       - Use these tips: https://medium.com/chialab-open-source/10-tips-to-enhance-your-ar-js-app-8b44c6faffca
       - do not change the "pattern ratio"
   - Upload the .patt file to your repository
-  - Change the 'url' of the marker in line 12 to the one you uploaded "markername.patt"
+  - Change the 'url' of the marker in line 12 of index.html to the one you uploaded "markername.patt"
   - Once updated, the model should show up when looking at the image of your new marker.
  
 Any changes you make usually take around a minute to take effect in the webapp.
