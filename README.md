@@ -8,7 +8,7 @@
  
   AR:
   1. Create a new repository in your GitHub profile
-  2. Import this repository
+  2. Import this repository ( https://github.com/MokosDaniel/ARPymol )
   3. Upload your gltf model
   4. Edit the index.html file and change the name of the model "yellow.gltf" in line 17 to the name of your object, "filename.gltf"
   5. Commit changes, then in the repository, go to 'Settings - Pages - Branch' and select 'main' from the list
