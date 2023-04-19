@@ -2,17 +2,16 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
-  
+  <style> #fullscreen-btn { position: absolute; top: 10px; left: 10px; z-index: 9999; } </style>
   <body style="margin : 0px; overflow: hidden;">
+    <button id="fullscreen-btn" onclick="toggleFullScreen()">Fullscreen</button>
   <a-scene embedded arjs=’sourceType: webcam; sourceWidth:1920; sourceHeight:1080; displayWidth: 1920; displayHeight: 1080;’
               vr-mode-ui="enabled: false"
               gesture-detector >
 
       <a-marker type="pattern" preset="custom" url="3Dmarker.patt">        
 
-        <a-entity
-          position="0 0 0"
-          scale="0.1 0.1 0.1"
+        <a-entity position="0 0 0" scale="0.1 0.1 0.1"
                   
           gltf-model="yellow.gltf"
           
@@ -22,5 +21,16 @@
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
+    <script>
+      function toggleFullScreen() {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen();
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+        }
+      }
+    </script>
   </body>
 </html>
