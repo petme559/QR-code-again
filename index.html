@@ -1,32 +1,24 @@
 <html>
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-  <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+  
   <body style="margin : 0px; overflow: hidden;">
   <a-scene embedded arjs=’sourceType: webcam; sourceWidth:1920; sourceHeight:1080; displayWidth: 1920; displayHeight: 1080;’
               vr-mode-ui="enabled: false"
-              gesture-detector
-             >
-Properties>
-      <a-marker type="pattern" preset="custom" url="pattern-3DmarkerBastian.patt">        
+              gesture-detector >
 
-   
+      <a-marker type="pattern" preset="custom" url="3Dmarker.patt">        
+
         <a-entity
           position="0 0 0"
           scale="0.1 0.1 0.1"
+                  
           gltf-model="yellow.gltf"
+          
           class="clickable"
           gesture-handler="minScale: 0.025; maxScale: 10"
         ></a-entity>
-       <!-- 
-        <a-entity light="type: hemisphere; color: #FFF; groundColor: #BBB; intensity: 5"></a-entity>
-        <a-entity light="type: directional; color: #FFF; intensity: 3" position="-1 1 0"></a-entity>
-        <a-entity light="type: point; intensity: 3; distance: 0; decay: 1"
-          position="0 100 100"></a-entity> 
-         -->
-
-
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
