@@ -23,5 +23,6 @@ In case you want to use a personalized Marker:
       - do not change the "pattern ratio"
   - Upload the .patt file to your repository
   - Change the 'url' of the marker in line 11 to the one you uploaded "markername.patt"
-  Once updated the model should show up when looking at the image of your new marker.
+  - Once updated, the model should show up when looking at the image of your new marker.
 
+Any changes you make usually take around a minute to take effect in the webapp.
